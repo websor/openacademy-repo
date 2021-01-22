@@ -6,7 +6,43 @@
         <field name="model">openacademy.course</field>
         <field name="arch" type="xml">
             <form string="Course Form">
+                <!--HTML VERSION-->   
+                <header>
+                    <button string="Confirm" type="object" 
+                    name="action_confirm" 
+                    class="oe_highlight"/>
+
+                    <button string="Mark as done" type="object"
+                    name="action_done"  
+                    class="oe_highlight"/>
+
+                    <button string="Reset to draft" type="object"
+                    name="action_draft" />
+
+                    <!--<field name="state" widget="statusbar"/>-->
+                </header>
+
                 <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" 
+                        string="Idea Name"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <separator string="General" colspan="2"/>
+                    <notebook cospan="2" col="2">
+                        <page string="description">
+                            <field name="description" placeholder="Idea Description..." />
+                        </page>
+                        <page string="Additional Information">
+                            Add additional info here
+                        </page>
+                    </notebook>
+                </sheet>
+                <!--ENDING HTML VERSION--> 
+
+
+                <!-- XML VERSION -->
+               <!-- <sheet>
                     <group>
                         <field name="name" />
                     </group>
@@ -18,7 +54,8 @@
                             This is an example of pagination
                         </page>
                     </notebook>
-                </sheet>
+                </sheet> -->
+                <!-- ENDING XML VERSION -->
             </form>
         </field>
     </record>
@@ -48,6 +85,8 @@
         </field>
     </record>
     <!-- ENDING SEARCH VIEW -->
+
+
     <data>
         <!-- window action -->
         <!--
