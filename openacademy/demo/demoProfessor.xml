@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+          <record id="professor1" model="openacademy.professor">
+            <field name="name">Alfredo Morales</field>
+            <field name="description">
+              Computer Science and Informacion system diploma
+              I am from Venezuela
+            </field>
+          </record>
+
+          <record id="professor2" model="openacademy.professor">
+            <field name="name">Erminio Stable</field>
+            <field name="description">
+              Double citizenship. Eng. 
+            </field>
+          </record>
+
+    </data>
+</odoo>

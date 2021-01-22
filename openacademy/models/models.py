@@ -8,3 +8,10 @@ class Course(models.Model):
 
     name = fields.Char(string="Title", required=True)
     description = fields.Text()
+
+class Professor(models.Model):
+    _name = 'openacademy.professor'
+    _description = 'Model to store professors'
+
+    name = fields.Char(string="Name", required=True)
+    description = fields.Text()
