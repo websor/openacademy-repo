@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-
+<!-- COURSE  FORM VIEW -->
     <record model="ir.ui.view" id="course_form_view">
         <field name="name">course.form</field>
         <field name="model">openacademy.course</field>
@@ -36,6 +36,14 @@
                         </page>
                         <page string="Additional Information">
                             Add additional info here
+                        </page>
+                        <page string="Courses">
+                            <field name="sessions_ids" nolabel="1"> 
+                                <tree string="Registered sessions">
+                                    <field name="name"/>
+                                    <field name="instructor_id" />
+                                </tree>
+                            </field>
                         </page>
                     </notebook>
                 </sheet>

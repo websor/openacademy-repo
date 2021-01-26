@@ -12,6 +12,8 @@ class Course(models.Model):
         'res.users', string="Responsible",
         index="true", ondelete='set null'
     )
+    
+    sessions_ids = fields.One2many('openacademy.session', 'course_id')
 
 class Professor(models.Model):
     _name = 'openacademy.professor'
