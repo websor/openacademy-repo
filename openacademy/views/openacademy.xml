@@ -24,10 +24,17 @@
 
                 <sheet>
                     <div class="oe_title">
+
                         <label for="name" class="oe_edit_only" 
                         string="Idea Name"/>
-                        <h1><field name="name"/></h1>
+
+                        <field name="name"/>
+
+                        <label for="name" class="oe_edit_only" 
+                        string="Choose a Professor"/>
+
                         <field name="responsible_id"/>
+                        
                     </div>
                     <separator string="General" colspan="2"/>
                     <notebook cospan="2" col="2">
