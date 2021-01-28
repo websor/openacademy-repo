@@ -89,10 +89,13 @@
                         <field name="start_date" />
                         <field name="duration" />
                         <field name="seats" />
+                         <field name="taken_seats" string="Seats taken" widget="progressbar"/>
+                        <field name="datetime_test" />
                         <field name="instructor_id" />
                         <field name="course_id" />
                         <label for="attendee_ids"/>
                         <field name="attendee_ids" nolable="1"/>
+                        <field name="active" />
                     </group>
                 </sheet> 
                 <!-- ENDING XML VERSION -->
@@ -125,6 +128,7 @@
                 <field name="start_date"/>
                 <field name="duration" />
                 <field name="seats" />
+                <field name="taken_seats" string="Seats taken" widget="progressbar"/>
                 <field name="instructor_id"/>
                 <field name="course_id" />
             </tree>
